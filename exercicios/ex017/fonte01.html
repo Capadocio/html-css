@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: black;
+            color: rgb(0, 223, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            recomendação oficial = px, em
+
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vx, vh, %
+            16px geralmente padrão = 1em
+
+            Usando uma fonte com peso, deve usar os atributos lighter normal bold bolder
+            */
+            font-size: 16px;
+        }
+/* caixa com contéudo do site*/
+        main{
+            background-color: azure;
+            border-radius: 6px;
+            width: 1000px;
+            padding: 10px;
+            margin: auto;
+        }
+
+        h1{
+            /*
+            shorthand font (Uma mãozinha) - usa a seguinte sequência de tags.
+            
+            font-style -> font-weight -> font-size -> font-family
+
+            em vez de digitar isso:
+
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            se digita isso:
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            text-align: center;
+        }
+
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 30px; /* Espaçamento do inicio do paragrafo */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h1>Trabalhando com Fontes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus temporibus deleniti nesciunt expedita recusandae laudantium autem sed aspernatur, magni placeat reprehenderit doloribus quae non quia ipsum esse impedit veniam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem rem aperiam iste! Labore, voluptatem ipsa molestias quam praesentium quia necessitatibus iste. Voluptatum consectetur molestiae exercitationem praesentium temporibus quo. Similique, voluptates.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus, harum tenetur dignissimos nulla impedit praesentium porro excepturi laborum ipsam incidunt quo ducimus, odit necessitatibus ab architecto doloremque. Quibusdam, dicta?</p>
+        <h2>Subtítulo do exercício</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo omnis tempora debitis hic iure quibusdam beatae delectus ea a ducimus modi voluptatum mollitia fuga cumque excepturi unde, corporis animi quas!</p>
+    </main>
+   
+    
+</body>
+</html>

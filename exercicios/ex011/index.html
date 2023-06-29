@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/wow.ico" type="image/x-icon">
+    <title>Imagem Dinâmica</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminui o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"><!-- Tag source media ajusta o tamanho da imagem na tela -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1><!--Formatos de audio disponiveis nos navegadores, mp3, ogg, wav.-->
+    <audio src="midia/guanacast-33.mp3" controls autoplay>Guanacast-33</audio><!--Forma de adicionar simples-->
+    <h2>Outra forma de adicionar audio</h2>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta audio.</p>
+    </audio>
+
+</body>
+</html>

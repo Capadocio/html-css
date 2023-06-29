@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+.titulo{
+    align-items: center;
+    text-align: center;
+    font-family: Arial;
+}
+/*Imagens*/
+.imagens{
+    align-items: center;
+    text-align: center;
+}
+.video{
+    align-items: center;
+    text-align: center;
+}
+.menu{
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}

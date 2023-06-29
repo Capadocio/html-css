@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/wow.ico" type="image/x-icon">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor. </p>
+    <video src="midia/lago.mp4" controls width="20%">Lago</video><!--Método de inserir vídeo simples-->
+    <h2>Outra maneira de postar vídeos</h2>
+    <video width="20%" poster="midia/download.jfif" controls>
+        <source src="midia/lago.webm" type="video/webm">
+        <source src="midia/lago.ogv" type="video/ogv">
+        <source src="midia/lago.mp4" type="video/mp4">
+    </video>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rMnGYDi7Li0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>outro serviço de streamer (Vimeo)</h2><!--Tag iframe adiciona elementos externos, como videos, maps.-->   
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/274713405?h=440e245a92&autoplay=1&color=ff9933"  style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/274713405">EMUNAH</a> from <a href="https://vimeo.com/domcake">DOMCAKE</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

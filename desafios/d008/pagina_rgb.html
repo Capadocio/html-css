@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Página RGB</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .color-change{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: color-change 8s linear infinite alternate both;
+        animation: color-change 8s linear infinite alternate both;
+    }
+    @-webkit-keyframes color-change{
+        0%{
+            background: blue;
+        }
+        25%{
+            background: red;
+        }
+        50%{
+            background: green;
+        }
+        75%{
+            background: yellow;
+        }
+        100%{
+            background: whitesmoke;
+        }
+    }
+    @keyframes color-change{
+        0%{
+            background: blue;
+        }
+        25%{
+            background: red;
+        }
+        50%{
+            background: green;
+        }
+        75%{
+            background: yellow;
+        }
+        100%{
+            background: whitesmoke;
+        } 
+    }
+</style>
+<body>
+    <div class="color-change">
+        <h2>Página RGB</h2>
+    </div>
+    <div class="menu">
+        <a href="index.html">Retornar para página incial</a>
+    </div>   
+    
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        /*
+        
+        SELETORES PERSONALIZADOS
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = pseudo-element
+        >   = children (Heraça de filho)
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /*Pseudo-Classes = usa-se : */
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+            color: green;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        /*Comandos que vem no final dos links*/
+        
+        a::after{
+            content: '  [link]';
+            font-weight: normal;
+            text-decoration: none;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.mercadolivre.com.br/" target="_blank">Link 01</a></li>
+        <li><a href="https://www.americanas.com.br/" target="_blank">Link 02</a></li>
+        <li><a href="https://heroesofwow.com/textos.php?pagina=comojogar" target="_blank">Link 03</a></li>
+    </ul>
+    
+</body>
+</html>
